@@ -18,6 +18,7 @@ You can keep here other minutes as well.
 
 
 ### Week 4
+* Meeting
   * Date: Date: 15/08/2024
   * Present: Joey, Aaron, Tanmay, Callum, Rikita, Zarrar, Htet
   * Apologies: Vasi
