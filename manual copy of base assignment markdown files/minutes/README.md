@@ -17,7 +17,7 @@ You can keep here other minutes as well.
 * Next meeting: Set a date for the next meeting.
 
 
-* Header
+### Week 4
   * Date: Date: 15/08/2024
   * Present: Joey, Aaron, Tanmay, Callum, Rikita, Zarrar, Htet
   * Apologies: Vasi
