@@ -7,7 +7,7 @@
 
 ### Title Page
 
-- Project name, names of all team members
+- Project name, Joey, Tanmay, Vasi, Aaron
 - Vision statement
 
 ### Change Log
