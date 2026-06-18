@@ -1915,10 +1915,11 @@
 
     // SCROLL SPY
     const spy = new IntersectionObserver((entries) => {
+      if (optusActive) return;
       entries.forEach(e => {
         if (!e.isIntersecting) return;
         const link = document.querySelector('.nl[data-section="' + e.target.id + '"]');
-        document.querySelectorAll('.nl').forEach(l => l.classList.remove('active'));
+        document.querySelectorAll('.nl:not(.opt-nl)').forEach(l => l.classList.remove('active'));
         if (link) link.classList.add('active');
       });
     }, { rootMargin: '-38% 0px -56% 0px', threshold: 0 });
