@@ -1913,6 +1913,20 @@
       if (el) el.classList.add('active');
     }
 
+    // SCROLL SPY
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const link = document.querySelector('.nl[data-section="' + e.target.id + '"]');
+        document.querySelectorAll('.nl').forEach(l => l.classList.remove('active'));
+        if (link) link.classList.add('active');
+      });
+    }, { rootMargin: '-38% 0px -56% 0px', threshold: 0 });
+    scrollSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) spy.observe(el);
+    });
+    
     // SKILL BARS
     const barObs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
